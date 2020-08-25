@@ -120,7 +120,7 @@ def print_info(label):
             image2 = Image.open('pie_plot_success.png')
             st.image(image2, use_column_width=True)
             st.markdown('### Libraries to make this plot:')
-            st.markdown('- [matplotlib.pyplot.bar](https://matplotlib.org/api/_as_gen/matplotlib.pyplot.bar.html) ')
+            st.markdown('- [matplotlib.pyplot.bar](https://matplotlib.orompiled slug size: 580M is too largeg/api/_as_gen/matplotlib.pyplot.bar.html) ')
             st.markdown('- [Plotly](https://plotly.com/python/bar-charts/)')
         
     elif label == 11:
@@ -165,7 +165,7 @@ if uploaded_file is not None:
     with st.spinner('Wait for it...'):
         time.sleep(5)
         st.success('Done!')
-    label = teachable_machine_classification(image, 'per_trained_v2.h5')
+    label = teachable_machine_classification(image, 'keras_model.h5')
     print_info(label)
 
 
