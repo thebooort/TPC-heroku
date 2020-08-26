@@ -81,7 +81,7 @@ def print_info(label):
     elif label == 7:
             st.write("Your plot is a.....")
             st.markdown('## Choropleth Plot!')
-            image2 = Image.open(' choropleth_plot_success.png')
+            image2 = Image.open('choropleth_plot_success.png')
             st.image(image2, use_column_width=True)
             st.markdown('### Libraries to make this plot:')
             st.markdown('- [matplotlib.pyplot.bar](https://matplotlib.org/api/_as_gen/matplotlib.pyplot.bar.html) ')
